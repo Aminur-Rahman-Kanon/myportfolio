@@ -1,0 +1,101 @@
+.resumeContainer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.resumeH3 {
+    letter-spacing: 1px;
+    text-align: left;
+    color: #869fa5;
+}
+
+.skillContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    margin: 10px 0;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.skillsItems {
+    width: 100%;
+    /* margin: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.skillsItem {
+    width: 120px;
+    margin: 10px 0;
+}
+
+.skillsItemIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.skillsItemP {
+    font-size: 14px;
+}
+
+.educationItem {
+    width: 180px;
+    padding: 10px;
+    /* margin-left: 10px; */
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.label {
+    border: 1px solid #869fa5;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: rgb(124, 124, 124);
+    font-size: 13px;
+}
+
+.educationH3 {
+    margin: 10px 0 0 0;
+}
+
+.educationP {
+    text-align: left;
+    margin-top: 10px 0 0 0;
+    font-size: 14px;
+}
+
+@media (max-width: 550px) {
+    .skillsItems {
+        margin: 0;
+    }
+
+    .educationItem {
+        margin-left: unset;
+    }
+
+    .skillsItem {
+        width: 95px;
+    }
+}

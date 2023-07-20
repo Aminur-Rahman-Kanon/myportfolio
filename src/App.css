@@ -1,38 +1,184 @@
 .App {
+  width: 100%;
+  height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  margin: 50px auto;
+  /* background: linear-gradient(to bottom right,#708a91 0,#6d8b68 100%); */
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.main-element {
+  position: relative;
+  height: 85vh;
+  max-height: 600px;
+  width: 95%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.static-element {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-element-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.slider-element {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  /* width: 50%; */
+  height: 92%;
+  overflow-y: scroll;
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  transform: translate(-50%);
+}
+
+.slider-element.show {
+  transform: translate(0);
+  opacity: 1;
+}
+
+.slider-element::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.slider-element::-webkit-scrollbar-thumb {
+  background-color:#85898a;
+  border-radius: 10px;
+}
+
+.slider-element::-webkit-scrollbar-thumb:hover {
+  background-color: #676969;
+}
+
+.statusMsgContainer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.statusMsgH3 {
+  color: lightgray;
+  margin: 10px;
+}
+
+.statusMsgP {
+  margin: 3px;
+  color: lightgray;
+}
+
+.statusMsgBtn {
+  width: 200px;
+  height: 40px;
+  margin: 20px auto;
+  border: 1px solid rgb(224, 118, 24);
+  background-color: rgb(224, 118, 24);
   color: white;
+  cursor: pointer;
+  opacity: 0.9;
 }
 
-.App-link {
-  color: #61dafb;
+.statusMsgBtn:hover {
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.topbar-container {
+  position: sticky;
+  top: 50px;
+  margin: 8px;
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .App {
+    height: auto;
+    align-items: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+
+  .topbar-container {
+    display: block;
+  }
+
+  .main-element {
+    width: 70%;
+    height: auto;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider-element-container {
+    width: 100%;
+  }
+
+  .slider-element {
+    position: static;
+    opacity: 1;
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+    transform: unset;
+    overflow-y: unset;
+  }
+
+  .slider-element.show {
+    transform: unset;
+  }
+
+  .static-element {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 550px) {
+  .App {
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .topbar-container {
+    width: 100%;
+    top: 0;
+    margin: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px 0 #869fa5;
+  }
+
+  .main-element {
+    width: 90%;
+    padding: 0;
+  }
+
+  .static-element {
+    margin: 0 0 10px 0;
+  }
+
+  #contact {
+    margin:  10px 0 20px 0;
   }
 }

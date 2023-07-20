@@ -1,0 +1,146 @@
+.contactContainer {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contactH2 {
+    color: #869fa5;
+    letter-spacing: 1px;
+}
+
+.hr {
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.contactDetails {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contactP {
+    margin: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.formContainer {
+    width: 95%;
+    margin: 15px 0;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.formInputContainer {
+    width: 95%;
+    height: 50px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.contactFormIcon {
+    font-size: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(211, 211, 211, 0.259);
+    color: #869fa5;
+}
+
+.contactFormInput {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #7299a3;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+}
+
+.contactFormInput.wrongInput {
+    background-color: #ff000033;
+}
+
+.formTextareaContainer {
+    width: 95%;
+    height: 150px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+
+.contactFormTextarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #7299a3;
+}
+
+.submitBtn {
+    width: 200px;
+    height: 40px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #7299a3;
+    opacity: 0.9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnIcon {
+    margin: 0 5px;
+}
+
+.submitBtn:hover {
+    opacity: 1;
+}
+
+.submitBtn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.submitBtn:disabled:hover {
+    color: #7299a3;
+    font-weight: 700;
+}
+
+.linkedin {
+    color: #82bef9;
+    text-decoration: none;
+    cursor: pointer;
+}

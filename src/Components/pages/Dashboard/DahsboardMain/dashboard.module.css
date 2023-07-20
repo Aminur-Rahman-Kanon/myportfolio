@@ -1,0 +1,30 @@
+.dashboardContainer {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.dashboardTopbarContainer {
+    z-index: 1;
+    box-sizing: border-box;
+    margin: 0 15px;
+}
+
+.dashboardProfileContainer {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1080px) {
+    .dashboardContainer {
+        flex-flow: column;
+    }
+    .dashboardTopbarContainer {
+        display: none;
+        /* position: relative;
+        width: 100%; */
+    }
+}

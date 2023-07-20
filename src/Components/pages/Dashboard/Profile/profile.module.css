@@ -1,0 +1,174 @@
+.profileContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileh1 {
+    font-weight: 600;
+    color: #708a91;
+    font-size: 25px;
+}
+
+.profileh4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.profileAvatar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.borderContainer {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #869fa5;
+    background-color: #869fa5;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+.profileAvatarContainer {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 12px 2px lightgray;
+}
+
+.profileAvatarImgContainer{
+    width: 100%;
+    height: 60%;
+    background-image: url('../../../../Assets/person.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.profileAvatarDetailsContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profileDetails {
+    width: 100%;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.profileImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileSocialLinkContainer {
+    width: 100%;
+    /* margin: 10px; */
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socilaIcon {
+    font-size: 22px;
+    margin: 0 10px;
+    color: #708a91;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.socilaIcon:hover {
+    opacity: 1;
+}
+
+.hr {
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 85%;
+}
+
+.downloadLinkContainer {
+    margin: 10px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.downloadLink {
+    margin: 10px 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 31, 31);
+}
+
+.downloadLink:hover {
+    color: #869fa5;
+}
+
+.downloadText {
+    color: inherit;
+    margin: 0 1px;
+    font-size: 13px;
+}
+
+.downloadLinkIcon {
+    width: 20px;
+    margin: 0 1px;
+    color: inherit;
+}
+
+@media (max-width: 1080px) {
+    .profileAvatarImgContainer {
+        height: 380px;
+    }
+}
+
+@media (max-width: 550px) {
+    .borderContainer {
+        display: none;
+    }
+
+    .profileAvatarContainer {
+        box-shadow: none;
+        border-radius: unset;
+    }
+
+    .profileSocialLinkContainer {
+        justify-content: space-evenly;
+    }
+
+    .downloadLink {
+        color: #869fa5;
+    }
+}
