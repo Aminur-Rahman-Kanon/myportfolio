@@ -13,7 +13,8 @@ import python from '../../../Assets/icon/python.png';
 import react from '../../../Assets/icon/react.png';
 import sql from '../../../Assets/icon/sql.png';
 import vs from '../../../Assets/icon/vs.png';
-
+import udemy from '../../../Assets/icon/udemy.png';
+import freeCodeCamp from '../../../Assets/icon/freecodecamp.png';
 
 
 function Resume () {
@@ -25,23 +26,27 @@ function Resume () {
                 <div className={styles.skillsItems} style={{justifyContent: 'flex-start'}}>
                     <div className={styles.educationItem}>
                         <span className={styles.label}>2019-2020</span>
+                        <img src={cisco} alt="cisco" className={styles.educationItemIcon}/>
                         <h3 className={styles.educationH3}>Cisco</h3>
                         <p className={styles.educationP}>Cisco Certified Entry Network Technician</p>
                     </div>
                     <div className={styles.educationItem}>
                         <span className={styles.label}>2020-2020</span>
+                        <img src={udemy} alt="udemy" className={styles.educationItemIcon}/>
                         <h3 className={styles.educationH3}>Udemy</h3>
                         <p className={styles.educationP}>The Complete Python Bootstrap</p>
                     </div>
                     <div className={styles.educationItem}>
                         <span className={styles.label}>2021-2021</span>
+                        <img src={udemy} alt="cisco" className={styles.educationItemIcon}/>
                         <h3 className={styles.educationH3}>Udemy</h3>
                         <p className={styles.educationP}>The Complete Javascript Course</p>
                     </div>
                     <div className={styles.educationItem}>
                         <span className={styles.label}>2022-2022</span>
+                        <img src={freeCodeCamp} alt="cisco" className={styles.educationItemIcon}/>
                         <h3 className={styles.educationH3}>Free Code Camp</h3>
-                        <p className={styles.educationP}>Front Ebd Development Libraries</p>
+                        <p className={styles.educationP}>Front End Development Libraries</p>
                     </div>
                 </div>
             </div>

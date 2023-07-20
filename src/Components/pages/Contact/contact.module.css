@@ -9,9 +9,10 @@
     align-items: flex-start;
 }
 
-.contactH2 {
-    color: #869fa5;
+.contactH3 {
     letter-spacing: 1px;
+    text-align: left;
+    color: #869fa5;
 }
 
 .hr {

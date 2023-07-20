@@ -74,7 +74,7 @@ function Contact ({toggleSpinner, toggleModal, toggleStatus}) {
     return (
         <>
         <div className={styles.contactContainer}>
-            <h2 className={styles.contactH2}>Contact</h2>
+            <h3 className={styles.contactH3}>Contact</h3>
             <hr className={styles.hr}/>
             <div className={styles.contactDetails}>
                 <p className={styles.contactP}>I would love to discuss how I can contribute to your projects or answer any questions you may have. Feel free to reach out to me through the following channels:</p>
