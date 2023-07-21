@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Dahsboard from './Components/pages/Dashboard/DahsboardMain/dashboard';
 import About from './Components/pages/About/about';
@@ -18,6 +18,10 @@ function App() {
     const [modal, setModal] = useState(false);
 
     const [status, setStatus] = useState('');
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
     const smoothScroll = (id) => {
         if (window.innerWidth <= 1080){
