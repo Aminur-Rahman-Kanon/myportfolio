@@ -11,10 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .main-element {
-  position: relative;
+  /* position: relative; */
   height: 85vh;
   max-height: 600px;
   width: 95%;
@@ -109,7 +110,7 @@
 .topbar-container {
   position: sticky;
   top: 50px;
-  margin: 8px;
+  margin: 5px;
   display: none;
 }
 
@@ -118,14 +119,15 @@
     height: auto;
     align-items: flex-start;
   }
-
+  
   .topbar-container {
     display: block;
   }
-
+  
   .main-element {
     width: 70%;
     height: auto;
+    max-height: unset;
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;

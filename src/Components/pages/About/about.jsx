@@ -12,11 +12,10 @@ function About () {
                 <h3 className={styles.aboutH3}>About Me</h3>
                 <hr className={styles.hr}/>
                 <div className={styles.aboutDetails}>
-                    <p className={styles.aboutP}><strong>Hello I'm Md Aminur Rahman.</strong> A frontend developer specializing in user-friendly websites using the MERN stack. With 4+ years of experience in HTML, CSS, JavaScript, and the MERN (MongoDB, Express.js, React, Node.js) stack, transforming design mockups into pixel-perfect sites.</p>
+                    <p className={styles.aboutP}><strong>Hello, I'm Md Aminur Rahman.</strong> A frontend developer specializing in user-friendly websites using the MERN stack. With 4+ years of experience in HTML, CSS, JavaScript, and the MERN (MongoDB, Express.js, React, Node.js) stack, transforming design mockups into pixel-perfect sites.</p>
                     <p className={styles.aboutP}>I prioritize the user experience, staying up to date with the latest trends and best practices. Collaboration is key, and I enjoy working closely with designers and developers to deliver seamless interfaces.</p>
                     <p className={styles.aboutP}>Clean code architecture and problem-solving are my strengths. I strive for scalability and maintainability in every project. Continuous learning is important to me, and I stay engaged with online communities and conferences.</p>
                     <p className={styles.aboutP}>Let's discuss how I can contribute to your projects and create exceptional user experiences together !</p>
-                    <p className={styles.aboutP}><string>Name: </string>Hello I'm Md Aminur Rahman. Frontend and MERN stack developer from UK, London.</p>
                     <br />
                     <div className={styles.contactDetailsGroup}>
                         <div className={styles.contactDetailsItem}>

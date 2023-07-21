@@ -12,7 +12,7 @@
 .resumeH3 {
     letter-spacing: 1px;
     text-align: left;
-    color: #869fa5;
+    color: #4A55A2;
 }
 
 .skillContainer {
@@ -37,8 +37,8 @@
     /* margin: 10px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-grow: 1;
 }
 
@@ -58,36 +58,48 @@
 
 .educationItem {
     width: 200px;
-    padding: 10px;
-    margin: 15px;
+    padding: 5px;
+    margin: 5px;
     box-sizing: border-box;
     display: flex;
+    flex-grow: 1;
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
 .label {
-    border: 1px solid #869fa5;
-    border-radius: 5px;
+    border: 1px solid #4A55A2;
+    border-radius: 3px;
+    margin: 5px 0;
     padding: 5px;
     box-sizing: border-box;
-    color: rgb(124, 124, 124);
+    color: #4A55A2;
     font-size: 13px;
 }
 
 .educationItemIcon {
-    width: 100px;
+    width: 60px;
+    height: 60px;
+    margin: 5px 0;
 }
 
 .educationH3 {
-    margin: 10px 0 0 0;
+    margin: 5px 0;
+    color: #4A55A2;
 }
 
 .educationP {
     text-align: left;
-    margin-top: 10px 0 0 0;
-    font-size: 14px;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+@media (max-width: 820px) {
+    .educationItemIcon {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (max-width: 550px) {

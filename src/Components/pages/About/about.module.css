@@ -14,7 +14,7 @@
 .aboutH3 {
     letter-spacing: 1px;
     text-align: left;
-    color: #869fa5;
+    color: #4A55A2;
 }
 
 .hr {
@@ -29,6 +29,8 @@
 .aboutDetails {
     width: 95%;
     text-align: justify;
+    word-spacing: 2px;
+    word-break: break-all;
 }
 .aboutP {
     margin: 2px;
@@ -53,6 +55,8 @@
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: justify;
+    word-break: break-all;
 }
 
 .serviceIcon {
@@ -63,7 +67,7 @@
 .serviceH3 {
     position: relative;
     margin: 10px 0;
-    color: #708a91;
+    color: #4A55A2;
 }
 
 .serviceH3::after {
@@ -74,7 +78,7 @@
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    background-color: #708a913f;
+    background-color: #4a54a229;
 }
 
 .serviceP {

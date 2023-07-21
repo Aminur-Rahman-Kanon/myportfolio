@@ -16,7 +16,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    color: #869fa5c9;
+    color: #7895CB;
     cursor: pointer;
 }
 
@@ -31,12 +31,11 @@
 }
 
 .topbarIconContainer:hover {
-    /* color: #869fa5; */
-    color: #708a91;
+    color: #4a54a2e8;
 }
 
 .topbarIconContainer.activeIcon {
-    color: #708a91;
+    color: #4a54a2e8;
 }
 
 @media (max-width: 550px) {

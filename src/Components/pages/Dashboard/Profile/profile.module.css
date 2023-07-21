@@ -10,7 +10,7 @@
 
 .profileh1 {
     font-weight: 600;
-    color: #708a91;
+    color: #4A55A2;
     font-size: 25px;
 }
 
@@ -35,8 +35,8 @@
     left: -15px;
     width: 100%;
     height: 100%;
-    border: 1px solid #869fa5;
-    background-color: #869fa5;
+    border: 1px solid #7895CB;
+    background-color: #7895CB;
     z-index: 0;
     border-radius: 5px;
 }
@@ -99,7 +99,7 @@
 .socilaIcon {
     font-size: 22px;
     margin: 0 10px;
-    color: #708a91;
+    color: #4A55A2;
     cursor: pointer;
     opacity: 0.8;
 }
@@ -129,17 +129,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(31, 31, 31);
+    color: #4A55A2;
+    opacity: 0.8;
 }
 
 .downloadLink:hover {
-    color: #869fa5;
+    opacity: 1;
 }
 
 .downloadText {
     color: inherit;
     margin: 0 1px;
-    font-size: 13px;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .downloadLinkIcon {
@@ -162,10 +164,6 @@
     .profileAvatarContainer {
         box-shadow: none;
         border-radius: unset;
-    }
-
-    .profileSocialLinkContainer {
-        justify-content: space-evenly;
     }
 
     .downloadLink {

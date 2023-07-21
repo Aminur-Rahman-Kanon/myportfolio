@@ -16,7 +16,7 @@ function Projects () {
                         <img src={nihon} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
-                        <h3 className={styles.projectsH3}>Semi-commerce website for cars auction and parts</h3>
+                        <h3 className={styles.projectsH3}>Semi commerce website for cars auction and parts</h3>
                     </div>
                 </div>
                 <div className={styles.projectsItem}>
@@ -24,7 +24,7 @@ function Projects () {
                         <img src={phone} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
-                        <h3 className={styles.projectsH3}>An online phone, tablet and laptop repair booking service</h3>
+                        <h3 className={styles.projectsH3}>An online phone tablet and laptop repair booking service</h3>
                     </div>
                 </div>
                 <div className={styles.projectsItem}>

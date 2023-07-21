@@ -12,7 +12,7 @@
 .contactH3 {
     letter-spacing: 1px;
     text-align: left;
-    color: #869fa5;
+    color: #4A55A2;
 }
 
 .hr {
@@ -30,6 +30,8 @@
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
+    text-align: justify;
+    word-break: break-all;
 }
 
 .contactP {
@@ -76,7 +78,7 @@
     border: none;
     outline: none;
     background-color: white;
-    color: #7299a3;
+    color: #4A55A2;
     font-size: 14px;
     letter-spacing: 0.4px;
 }
@@ -104,7 +106,8 @@
     border: none;
     outline: none;
     background-color: white;
-    color: #7299a3;
+    color: #4A55A2;
+    font-size: 14px;
 }
 
 .submitBtn {
@@ -114,11 +117,11 @@
     border: none;
     outline: none;
     background-color: transparent;
-    color: #7299a3;
+    color: #4A55A2;
     opacity: 0.9;
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -141,7 +144,7 @@
 }
 
 .linkedin {
-    color: #82bef9;
+    color: #0A66C2;
     text-decoration: none;
     cursor: pointer;
 }

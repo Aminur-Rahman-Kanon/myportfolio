@@ -32,7 +32,7 @@ const Profile = () => {
                 <div className={styles.downloadLinkContainer}>
                     <hr className={styles.hr}/>
                     <a href={cv} download className={styles.downloadLink}>
-                        <span className={styles.downloadText}>DOWNLOAD CV</span>
+                        <span className={styles.downloadText}>DOWNLOAD RESUME</span>
                         <FontAwesomeIcon icon={faDownload} className={styles.downloadLinkIcon}/>
                     </a>
                 </div>
