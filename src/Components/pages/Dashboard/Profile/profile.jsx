@@ -1,6 +1,5 @@
 import React from "react";
 import styles from './profile.module.css';
-import person from '../../../../Assets/person.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
