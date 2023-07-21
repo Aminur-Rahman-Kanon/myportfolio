@@ -29,7 +29,8 @@ function App() {
                 behavior: 'smooth',
                 block: 'start',
                 inline: 'center'
-            })
+            });
+            setItem(id);
         }
         else {
             setItem(id);
