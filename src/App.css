@@ -44,7 +44,6 @@
   position: absolute;
   top: 27px;
   left: 0;
-  /* width: 50%; */
   height: 92%;
   overflow-y: scroll;
   opacity: 0;
@@ -109,6 +108,7 @@
 
 .topbar-container {
   position: sticky;
+  width: 72px;
   top: 50px;
   margin: 5px;
   display: none;
@@ -125,7 +125,7 @@
   }
   
   .main-element {
-    width: 70%;
+    width: 75%;
     height: auto;
     max-height: unset;
     flex-flow: column;
@@ -158,14 +158,14 @@
 }
 @media (max-width: 550px) {
   .App {
-    flex-flow: column;
+    flex-flow: column-reverse;
     align-items: center;
     justify-content: flex-start;
   }
 
   .topbar-container {
     width: 100%;
-    top: 0;
+    bottom: 0;
     margin: 0;
     z-index: 100;
     box-shadow: 0 2px 15px 0 #869fa5;

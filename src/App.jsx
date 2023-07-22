@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Dahsboard from './Components/pages/Dashboard/DahsboardMain/dashboard';
 import About from './Components/pages/About/about';
@@ -8,16 +8,48 @@ import Contact from './Components/pages/Contact/contact';
 import Spinner from './Components/Others/Spinner/spinner';
 import Modal from './Components/Others/Modal/modal';
 import Topbar from './Components/pages/Dashboard/Topbar/topbar';
+import useOnScreen from './Components/Others/Utilities/UseOnScreen/useOnScreen';
 
 function App() {
-  
-    const [item, setItem] = useState('about');
     
+    const dashboardRef = useRef();
+    const aboutRef = useRef();
+    const resumeRef = useRef();
+    const projectRef = useRef();
+    const contactRef = useRef();
+
+    const [item, setItem] = useState('about');
+
     const [spinner, setSpinner] = useState(false);
-
     const [modal, setModal] = useState(false);
-
     const [status, setStatus] = useState('');
+
+    const isDashBoardVisible = useOnScreen(dashboardRef);
+    const isAboutVisible = useOnScreen(aboutRef);
+    const isResumeVisible = useOnScreen(resumeRef);
+    const isProjectVisible = useOnScreen(projectRef);
+    const isContactVisible = useOnScreen(contactRef);
+
+    const visibilityCheckItems = {
+        isAboutVisible, isResumeVisible, isContactVisible, isProjectVisible, isDashBoardVisible
+    }
+
+    useEffect(() => {
+        const handleWindowResize = () => {
+          if (window.innerWidth >= 1080) {
+            setItem('about');
+          }
+          else {
+            setItem('');
+          }
+        };
+    
+        window.addEventListener('resize', handleWindowResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
+      });
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -65,23 +97,23 @@ function App() {
         <Spinner spinner={spinner}/>
         <div className="App">
             <div className="topbar-container">
-                <Topbar item={item} changeItem={smoothScroll}/>
+                <Topbar item={item} changeItem={smoothScroll} visibilityCheck={ visibilityCheckItems } />
             </div>
             <div className="main-element">
-                <div className="static-element">
-                    <Dahsboard item={item} toggleItem={ smoothScroll }/>
+                <div className="static-element" ref={dashboardRef}>
+                    <Dahsboard item={item} toggleItem={ smoothScroll } visibilityCheckItems={visibilityCheckItems} />
                 </div>
                 <div className="slider-element-container">
-                    <div className={item === 'about' ? "slider-element show" : "slider-element"} id="about">
+                    <div className={item === 'about' ? "slider-element show" : "slider-element"} id="about" ref={aboutRef}>
                         <About />
                     </div>
-                    <div className={item === 'resume' ? 'slider-element show' : 'slider-element'} id="resume">
+                    <div className={item === 'resume' ? 'slider-element show' : 'slider-element'} id="resume" ref={resumeRef}>
                         <Resume />
                     </div>
-                    <div className={item === 'projects' ? 'slider-element show' : 'slider-element'} id="projects">
+                    <div className={item === 'projects' ? 'slider-element show' : 'slider-element'} id="projects" ref={projectRef}>
                         <Projects />
                     </div>
-                    <div className={item === 'contact' ? 'slider-element show' : 'slider-element'} id="contact">
+                    <div className={item === 'contact' ? 'slider-element show' : 'slider-element'} id="contact" ref={contactRef}>
                         <Contact toggleSpinner={setSpinner} toggleModal={setModal} toggleStatus={setStatus} />
                     </div>
                 </div>

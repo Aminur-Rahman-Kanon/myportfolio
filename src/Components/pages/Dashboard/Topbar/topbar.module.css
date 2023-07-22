@@ -16,8 +16,10 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    color: #7895CB;
+    color: #4550a3e8;
     cursor: pointer;
+    transition: all 0.7s ease;
+    opacity: 0.8;
 }
 
 .topbarIcon {
@@ -30,12 +32,9 @@
     font-size: 12px;
 }
 
-.topbarIconContainer:hover {
-    color: #4a54a2e8;
-}
-
-.topbarIconContainer.activeIcon {
-    color: #4a54a2e8;
+.topbarIconContainer:hover, .topbarIconContainer.activeIcon {
+    opacity: 1;
+    font-weight: 600;
 }
 
 @media (max-width: 550px) {
