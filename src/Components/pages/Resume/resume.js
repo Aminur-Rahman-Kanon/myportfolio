@@ -15,7 +15,7 @@ import sql from '../../../Assets/icon/sql.png';
 import vs from '../../../Assets/icon/vs.png';
 import udemy from '../../../Assets/icon/udemy.png';
 import freeCodeCamp from '../../../Assets/icon/freecodecamp.png';
-
+import certificate from '../../../Assets/icon/certificate.png';
 
 function Resume () {
     return (
@@ -24,6 +24,18 @@ function Resume () {
                 <h3 className={styles.resumeH3}>Education</h3>
                 <hr className={styles.hr}/>
                 <div className={styles.skillsItems} style={{justifyContent: 'flex-start'}}>
+                <div className={styles.educationItem}>
+                        <span className={styles.label}>2007-2009</span>
+                        <img src={certificate} alt="education" className={styles.educationItemIcon}/>
+                        <h3 className={styles.educationH3}>Higher School Certificate</h3>
+                        <p className={styles.educationP}>Science</p>
+                    </div>
+                    <div className={styles.educationItem}>
+                        <span className={styles.label}>1996-2007</span>
+                        <img src={certificate} alt="udemy" className={styles.educationItemIcon}/>
+                        <h3 className={styles.educationH3}>Secondary School Certificate</h3>
+                        <p className={styles.educationP}>Science</p>
+                    </div>
                     <div className={styles.educationItem}>
                         <span className={styles.label}>2019-2020</span>
                         <img src={cisco} alt="cisco" className={styles.educationItemIcon}/>
