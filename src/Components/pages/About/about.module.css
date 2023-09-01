@@ -28,9 +28,7 @@
 
 .aboutDetails {
     width: 95%;
-    text-align: justify;
-    word-spacing: 2px;
-    word-spacing: -1px;
+    text-align: left;
 }
 .aboutP {
     margin: 2px;
@@ -114,6 +112,9 @@
 }
 
 @media (max-width: 550px) {
+    .aboutContaner {
+        padding: 10px;
+    }
     .serviceItem {
         width: 100%;
     }

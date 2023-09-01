@@ -4,8 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBookOpen, faLaptop, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Topbar = ({ item, changeItem, visibilityCheck }) => {
-    console.log(visibilityCheck);
-    console.log(item);
+
     return (
         <div className={styles.topbarContainer}>
             <div className={item === 'about' || (visibilityCheck.isAboutVisible || visibilityCheck.isDashBoardVisible) ? `${styles.topbarIconContainer} ${styles.activeIcon}` : styles.topbarIconContainer} onClick={() => changeItem('about')}>

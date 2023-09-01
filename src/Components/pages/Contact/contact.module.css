@@ -43,7 +43,7 @@
 .formContainer {
     width: 95%;
     margin: 15px 0;
-    padding: 15px;
+    padding: 5px;
     box-sizing: border-box;
     display: flex;
     flex-flow: column;
@@ -59,6 +59,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    border-left: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
 }
 
@@ -79,8 +80,11 @@
     outline: none;
     background-color: white;
     color: #4A55A2;
-    font-size: 14px;
-    letter-spacing: 0.4px;
+    font-size: 13px;
+}
+
+.contactFormInput::placeholder, .contactFormTextarea::placeholder {
+    font-size: 12px;
 }
 
 .contactFormInput.wrongInput {
@@ -95,6 +99,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     background-color: white;
+    border-left: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
 }
 
@@ -108,13 +113,16 @@
     background-color: white;
     color: #4A55A2;
     font-size: 14px;
+    resize: none;
 }
 
 .submitBtn {
-    width: 200px;
     height: 40px;
     margin: 15px 0;
-    border: none;
+    border-left: 1px solid #4A55A2;
+    border-bottom: 1px solid #4A55A2;
+    border-top: none;
+    border-right: none;
     outline: none;
     background-color: transparent;
     color: #4A55A2;
@@ -131,6 +139,8 @@
 
 .submitBtn:hover {
     opacity: 1;
+    background-color: #4A55A2;
+    color: white;
 }
 
 .submitBtn:disabled {
@@ -147,4 +157,17 @@
     color: #0A66C2;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .formInputContainer, .formTextareaContainer {
+        width: 100%;
+    }
+    .contactContainer {
+        padding: 10px;
+    }
+
+    .submitBtn {
+        width: 100%;
+    }
 }

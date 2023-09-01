@@ -8,3 +8,9 @@
     border-radius: 5px;
     background-color: #383838;
 }
+
+@media (max-width: 450px) {
+    .modalContainer {
+        width: 90%;
+    }
+}

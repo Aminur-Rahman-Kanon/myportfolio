@@ -28,7 +28,7 @@ function About () {
                         </div>
                         <div className={styles.contactDetailsItem}>
                             <span className={styles.contactLabel}>Email:</span>
-                            <p className={styles.contactItem}>kanon754@gmail.com</p>
+                            <p className={styles.contactItem}>aminur.rahman.dev@gmail.com</p>
                         </div>
                         <div className={styles.contactDetailsItem}>
                             <span className={styles.contactLabel}>Phone:</span>

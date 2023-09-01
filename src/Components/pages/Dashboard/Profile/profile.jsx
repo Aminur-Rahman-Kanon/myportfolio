@@ -20,10 +20,18 @@ const Profile = () => {
                             {/* <h4 className={styles.profileh4}>Frontend Developer</h4> */}
                             <h4 className={styles.profileh4}>MERN Stack Developer</h4>
                             <div className={styles.profileSocialLinkContainer}>
-                                <FontAwesomeIcon icon={faGithub} className={styles.socilaIcon}/>
-                                <FontAwesomeIcon icon={faLinkedin} className={styles.socilaIcon}/>
-                                <FontAwesomeIcon icon={faTwitter} className={styles.socilaIcon}/>
-                                <FontAwesomeIcon icon={faStackOverflow} className={styles.socilaIcon}/>
+                                <a href="https://github.com/Aminur-Rahman-Kanon" target="_blank" className={styles.socialLink}>
+                                    <FontAwesomeIcon icon={faGithub} className={styles.socilaIcon}/>
+                                </a>
+                                <a href="https://www.linkedin.com/in/aminur-rahman-kanon" target="_blank" className={styles.socialLink}>
+                                    <FontAwesomeIcon icon={faLinkedin} className={styles.socilaIcon}/>
+                                </a>
+                                <a href="https://github.com/Aminur-Rahman-Kanon" target="_blank" className={styles.socialLink}>
+                                    <FontAwesomeIcon icon={faTwitter} className={styles.socilaIcon}/>
+                                </a>
+                                <a href="https://stackoverflow.com/users/14519102/aminur-rahman" target="_blank" className={styles.socialLink}>
+                                    <FontAwesomeIcon icon={faStackOverflow} className={styles.socilaIcon}/>
+                                </a>
                             </div>
                         </div>
                     </div>

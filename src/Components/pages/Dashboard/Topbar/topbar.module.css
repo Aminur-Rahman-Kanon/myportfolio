@@ -29,12 +29,13 @@
 
 .topbarP {
     margin: 5px;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .topbarIconContainer:hover, .topbarIconContainer.activeIcon {
     opacity: 1;
-    font-weight: 600;
+    color: #2132aee8;
+    
 }
 
 @media (max-width: 550px) {

@@ -84,6 +84,11 @@
 .statusMsgH3 {
   color: lightgray;
   margin: 10px;
+  font-size: 18px;
+}
+
+.statusMsgP {
+  font-size: 14px;
 }
 
 .statusMsgP {
