@@ -11,38 +11,38 @@ function Projects () {
             <h3 className={styles.projectsHeaderH3}>Recent Works</h3>
             <hr className={styles.hr}/>
             <div className={styles.projectsItemContainer}>
-                <div className={styles.projectsItem}>
+                <a href='https://nihonchukosha.onrender.com' target='_blank' className={styles.projectsItem}>
                     <div className={styles.projectsImgContainer}>
                         <img src={nihon} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
                         <h3 className={styles.projectsH3}>Semi commerce website for cars auction and parts</h3>
                     </div>
-                </div>
-                <div className={styles.projectsItem}>
+                </a>
+                <a href='https://phoneclinic.onrender.com' target='_blank' className={styles.projectsItem}>
                     <div className={styles.projectsImgContainer}>
                         <img src={phone} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
                         <h3 className={styles.projectsH3}>An online phone tablet and laptop repair booking service</h3>
                     </div>
-                </div>
-                <div className={styles.projectsItem}>
+                </a>
+                <a href='https://cyclefix.onrender.com' target='_blank' className={styles.projectsItem}>
                     <div className={styles.projectsImgContainer}>
                         <img src={cycle} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
                         <h3 className={styles.projectsH3}>An online bike and e-scooter repair booking service</h3>
                     </div>
-                </div>
-                <div className={styles.projectsItem}>
+                </a>
+                <a href='https://karkhana.onrender.com' target='_blank' className={styles.projectsItem}>
                     <div className={styles.projectsImgContainer}>
                         <img src={karkhana} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
                         <h3 className={styles.projectsH3}>An online store for selling womens casual jewelleries</h3>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     )
