@@ -3,7 +3,7 @@ import styles from './profile.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import cv from '../../../../Assets/files/Aminur Rahman.docx';
+import cv from '../../../../Assets/files/cv.pdf';
 
 const Profile = () => {
     return (
@@ -38,7 +38,7 @@ const Profile = () => {
                 </div>
                 <div className={styles.downloadLinkContainer}>
                     <hr className={styles.hr}/>
-                    <a href={cv} download className={styles.downloadLink}>
+                    <a href={cv} download="Aminur_Rahman_CV" new className={styles.downloadLink}>
                         <span className={styles.downloadText}>DOWNLOAD RESUME</span>
                         <FontAwesomeIcon icon={faDownload} className={styles.downloadLinkIcon}/>
                     </a>
