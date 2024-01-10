@@ -15,9 +15,10 @@
 }
 
 .main-element {
-  /* position: relative; */
+  max-width: 1500px;
   height: 85vh;
   max-height: 600px;
+  min-height: 550px;
   width: 95%;
   padding: 10px;
   box-sizing: border-box;
@@ -32,6 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 200;
 }
 
 .slider-element-container {
@@ -54,6 +56,7 @@
 .slider-element.show {
   transform: translate(0);
   opacity: 1;
+  z-index: 100;
 }
 
 .slider-element::-webkit-scrollbar {
