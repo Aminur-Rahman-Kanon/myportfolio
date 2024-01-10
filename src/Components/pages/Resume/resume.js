@@ -16,6 +16,7 @@ import vs from '../../../Assets/icon/vs.png';
 import udemy from '../../../Assets/icon/udemy.png';
 import freeCodeCamp from '../../../Assets/icon/freecodecamp.png';
 import certificate from '../../../Assets/icon/certificate.png';
+import post from '../../../Assets/icon/post.png';
 
 function Resume () {
     return (
@@ -106,7 +107,11 @@ function Resume () {
                     </div>
                     <div className={styles.skillsItem}>
                         <img src={sql} className={styles.skillsItemIcon}/>
-                        <p className={styles.skillsItemP}>SQL</p>
+                        <p className={styles.skillsItemP}>MySQL</p>
+                    </div>
+                    <div className={styles.skillsItem}>
+                        <img src={post} className={styles.skillsItemIcon}/>
+                        <p className={styles.skillsItemP}>PostgreSQL</p>
                     </div>
                     <div className={styles.skillsItem}>
                         <img src={python} className={styles.skillsItemIcon}/>
