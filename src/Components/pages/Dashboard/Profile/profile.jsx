@@ -38,7 +38,7 @@ const Profile = () => {
                 </div>
                 <div className={styles.downloadLinkContainer}>
                     <hr className={styles.hr}/>
-                    <a href={cv} download="Aminur_Rahman_CV" new className={styles.downloadLink}>
+                    <a href={cv} download="Aminur_Rahman_CV" new='true' className={styles.downloadLink}>
                         <span className={styles.downloadText}>DOWNLOAD RESUME</span>
                         <FontAwesomeIcon icon={faDownload} className={styles.downloadLinkIcon}/>
                     </a>
