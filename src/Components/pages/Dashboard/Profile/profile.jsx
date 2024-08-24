@@ -26,7 +26,7 @@ const Profile = () => {
                                 <a href="https://www.linkedin.com/in/aminur-rahman-kanon" target="_blank" className={styles.socialLink}>
                                     <FontAwesomeIcon icon={faLinkedin} className={styles.socilaIcon}/>
                                 </a>
-                                <a href="https://github.com/Aminur-Rahman-Kanon" target="_blank" className={styles.socialLink}>
+                                <a href="https://x.com" target="_blank" className={styles.socialLink}>
                                     <FontAwesomeIcon icon={faTwitter} className={styles.socilaIcon}/>
                                 </a>
                                 <a href="https://stackoverflow.com/users/14519102/aminur-rahman" target="_blank" className={styles.socialLink}>

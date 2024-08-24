@@ -35,7 +35,8 @@
 }
 
 .contactP {
-    margin: 5px;
+    margin: 20px 0;
+    line-height: 1.5rem;
     font-size: 14px;
     text-align: left;
 }
@@ -59,8 +60,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-left: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    border: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
 }
 
 .contactFormIcon {
@@ -99,8 +100,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     background-color: white;
-    border-left: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    border: 1px solid lightgray;
 }
 
 .contactFormTextarea {
@@ -119,10 +119,9 @@
 .submitBtn {
     height: 40px;
     margin: 15px 0;
-    border-left: 1px solid #4A55A2;
-    border-bottom: 1px solid #4A55A2;
-    border-top: none;
-    border-right: none;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #4A55A2;
     outline: none;
     background-color: transparent;
     color: #4A55A2;
@@ -135,11 +134,24 @@
 
 .btnIcon {
     margin: 0 5px;
+    color: #4A55A2;
+}
+
+.btnP {
+    font-size: 0.8rem;
+    color: #4A55A2;
 }
 
 .submitBtn:hover {
     opacity: 1;
     background-color: #4A55A2;
+}
+
+.submitBtn:hover .btnIcon {
+    color: white;
+}
+
+.submitBtn:hover .btnP {
     color: white;
 }
 
@@ -149,8 +161,16 @@
 }
 
 .submitBtn:disabled:hover {
+    background-color: unset;
     color: #4A55A2;
-    font-weight: 700;
+}
+
+.submitBtn:disabled:hover .btnP {
+    color: #4A55A2;
+}
+
+.submitBtn:disabled:hover .btnIcon {
+    color: #4A55A2;
 }
 
 .linkedin {

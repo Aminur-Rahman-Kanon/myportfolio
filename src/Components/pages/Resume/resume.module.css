@@ -34,22 +34,19 @@
 
 .skillsItems {
     width: 100%;
-    /* margin: 10px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-grow: 1;
 }
 
 .skillsItem {
     width: 120px;
-    margin: 10px 0;
+    margin: 25px 0;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
 }
 
 .skillsItemIcon {
