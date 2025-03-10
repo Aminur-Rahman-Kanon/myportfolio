@@ -20,7 +20,7 @@ function About () {
                     <div className={styles.contactDetailsGroup}>
                         <div className={styles.contactDetailsItem}>
                             <span className={styles.contactLabel}>Age:</span>
-                            <p className={styles.contactItem}>31 Years</p>
+                            <p className={styles.contactItem}>33 Years</p>
                         </div>
                         <div className={styles.contactDetailsItem}>
                             <span className={styles.contactLabel}>Country:</span>
@@ -32,7 +32,7 @@ function About () {
                         </div>
                         <div className={styles.contactDetailsItem}>
                             <span className={styles.contactLabel}>Phone:</span>
-                            <p className={styles.contactItem}>+447510268021</p>
+                            <p className={styles.contactItem}>+447878107873</p>
                         </div>
                         <div className={styles.contactDetailsItem}>
                             <span className={styles.contactLabel}>Freelance:</span>

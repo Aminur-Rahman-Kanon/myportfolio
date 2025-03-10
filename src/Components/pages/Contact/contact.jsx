@@ -79,7 +79,7 @@ function Contact ({toggleSpinner, toggleModal, toggleStatus}) {
             <div className={styles.contactDetails}>
                 <p className={styles.contactP}>I would love to discuss how I can contribute to your projects or answer any questions you may have. Feel free to reach out to me through the following channels:</p>
                 <p className={styles.contactP} style={{margin: '5px 0'}}><strong>Email: </strong>aminur.rahman.dev@gmail.com</p>
-                <p className={styles.contactP} style={{margin: '5px 0'}}><strong>Phone: </strong>+447510268021</p>
+                <p className={styles.contactP} style={{margin: '5px 0'}}><strong>Phone: </strong>+447878107873</p>
                 <p className={styles.contactP}>You can also find me on <a href='https://www.linkedin.com/in/aminur-rahman-kanon' target='_blank' className={styles.linkedin}>Linkedin</a> to connect professionally and stay updated on my latest projects and endeavors.</p>
                 <p className={styles.contactP}>I look forward to hearing from you and exploring opportunities to collaborate!</p>
                 <form className={styles.formContainer} ref={formRef} onSubmit={submitHandller}>

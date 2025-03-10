@@ -17,6 +17,7 @@ import udemy from '../../../Assets/icon/udemy.png';
 import freeCodeCamp from '../../../Assets/icon/freecodecamp.png';
 import certificate from '../../../Assets/icon/certificate.png';
 import post from '../../../Assets/icon/post.png';
+import coursera from '../../../Assets/icon/coursera.png';
 
 function Resume () {
     return (
@@ -29,18 +30,6 @@ function Resume () {
                         <span className={styles.label}>2012</span>
                         <img src={certificate} alt="education" className={styles.educationItemIcon}/>
                         <h3 className={styles.educationH3}>Bachelor of Science</h3>
-                        <p className={styles.educationP}>Science</p>
-                    </div>
-                    <div className={styles.educationItem}>
-                        <span className={styles.label}>2009</span>
-                        <img src={certificate} alt="education" className={styles.educationItemIcon}/>
-                        <h3 className={styles.educationH3}>Higher School Certificate</h3>
-                        <p className={styles.educationP}>Science</p>
-                    </div>
-                    <div className={styles.educationItem}>
-                        <span className={styles.label}>2007</span>
-                        <img src={certificate} alt="udemy" className={styles.educationItemIcon}/>
-                        <h3 className={styles.educationH3}>Secondary School Certificate</h3>
                         <p className={styles.educationP}>Science</p>
                     </div>
                     <div className={styles.educationItem}>
@@ -66,6 +55,12 @@ function Resume () {
                         <img src={freeCodeCamp} alt="cisco" className={styles.educationItemIcon}/>
                         <h3 className={styles.educationH3}>Free Code Camp</h3>
                         <p className={styles.educationP}>Front End Development Libraries</p>
+                    </div>
+                    <div className={styles.educationItem}>
+                        <span className={styles.label}>2024</span>
+                        <img src={coursera} alt="coursera" className={styles.educationItemIcon}/>
+                        <h3 className={styles.educationH3}>Coursera</h3>
+                        <p className={styles.educationP}>IBM Full stack Web Developer</p>
                     </div>
                 </div>
             </div>

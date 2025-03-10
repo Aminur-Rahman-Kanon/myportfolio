@@ -15,7 +15,7 @@ function Projects () {
                         <img src={tridiva} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
-                        <h3 className={styles.projectsH3}>A semi-commerce web application for an IT Company</h3>
+                        <h3 className={styles.projectsH3}>An IT Consulting Web application for an IT Company</h3>
                     </div>
                 </a>
                 <a href='https://www.neweraglazingsolutionsltd.co.uk' target='_blank' className={styles.projectsItem}>
@@ -23,7 +23,7 @@ function Projects () {
                         <img src={new_era} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
-                        <h3 className={styles.projectsH3}>A semi-commerce web application for selling products.</h3>
+                        <h3 className={styles.projectsH3}>A semi-commerce web application for showcasing products.</h3>
                     </div>
                 </a>
                 <a href='https://boxdelabonita.com' target='_blank' className={styles.projectsItem}>
@@ -31,7 +31,7 @@ function Projects () {
                         <img src={boxdelabonita} className={styles.projectsImg}/>
                     </div>
                     <div className={styles.projectsDetailsContainer}>
-                        <h3 className={styles.projectsH3}>An online store for selling womens bag and purse</h3>
+                        <h3 className={styles.projectsH3}>An E-Commerce web application for selling womens bag and purse</h3>
                     </div>
                 </a>
             </div>

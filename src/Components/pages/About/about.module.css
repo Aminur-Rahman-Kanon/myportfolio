@@ -32,7 +32,8 @@
 }
 .aboutP {
     margin: 20px 0;
-    font-size: 14px;
+    font-size: 1rem;
+    letter-spacing: 1px;
     font-weight: 400;
     line-height: 1.5rem;
 }
@@ -83,11 +84,13 @@
 .serviceP {
     margin: 5px 0;
     text-align: left;
-    font-size: 14px;
+    font-size: 1rem;
+    line-height: 25px;
 }
 
 .contactDetailsGroup {
     width: 100%;
+    gap: 10px;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -102,7 +105,7 @@
 }
 
 .contactItem {
-    font-size: 14px;
+    font-size: 1rem;
     margin: 3px 0;
 }
 

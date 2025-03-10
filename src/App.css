@@ -1,17 +1,25 @@
-.App {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  margin: 50px auto;
-  /* background: linear-gradient(to bottom right,#708a91 0,#6d8b68 100%); */
-  background-repeat: repeat;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  /* max-width: 1400px; */
+  height: 100vh;
+  text-align: center;
+  margin: 50px auto;
+  background-repeat: repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  background: linear-gradient(298deg, #A0BFE0, #4A55A2);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .main-element {
